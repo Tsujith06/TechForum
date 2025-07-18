@@ -7,8 +7,10 @@ import {   useNavigate } from 'react-router'
 
 import GoogleBtn from "../../components/googleSignBtn/googleBtn";
 import Button from "../../components/button/button";
+import { routes } from "../../router";
 const Login = () => {
   const [showpass, setShowpass] = useState(false);
+  const [user,setUser]=useState();
   const router = useNavigate();
   return (
     <div className="font-poppins">
@@ -40,6 +42,8 @@ const Login = () => {
                     placeholder={"Enter your college mail id"}
                     focus={true}
                     Type={"text"}
+                    value={user}
+                    onchange={(e)=>console.log(e)}
                   />
                 </div>
 
@@ -48,7 +52,7 @@ const Login = () => {
                     Password
                   </div>
                   <div className="relative  flex flex-col inset-0 ">
-                    <Input
+                    <Input 
                       placeholder={"Enter your password"}
                       focus={true}
                       Type={showpass}
@@ -72,7 +76,8 @@ const Login = () => {
                 <div className="w-full h-[1px] bg-white/30"></div>
                 <GoogleBtn />
               </div>
-              <Button name={'Sign in'} onClick={()=> router('/home')}/>
+              <Button name={'Sign in'} onClick={()=>router('/home')
+              }/>
             </div>
           </div>
         </div>

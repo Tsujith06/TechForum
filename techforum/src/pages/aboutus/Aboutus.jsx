@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import bg from "../../assets/homePage.png";
 import Header from "../../components/header/Header";
 import hand from "../../assets/hand.png"
-import SignatureEventCard from "../../components/SignatureEventCard/SignatureEventCard";
+import SignatureEventCard1 from "../../components/SignatureEventCard/SignatureEventCard";
+import SignatureEventCard2 from "../../components/SignatureEventCard2/SignatureEventCard2";
+import Gallery from "../../components/gallery/Gallery";
 const Aboutus = ({index,handleindex}) => {
   const [loading,setLoading]=useState(true);
     useEffect(()=>{
@@ -48,7 +50,15 @@ const Aboutus = ({index,handleindex}) => {
 
         <div className=" w-full pb-[30px] gap-[50px] top-[860px] absolute flex flex-col justify-center items-center ">
             <p className="text-white text-[48px] font-medium">Signature <span className="text-1">Events</span></p>
-            <div><SignatureEventCard/></div>
+            <div className="flex flex-col gap-[20px]">
+              <SignatureEventCard1 name={"CODESTORM"} />
+              <SignatureEventCard2 name={"TECHSPARK"}/>
+              <SignatureEventCard1 name={"INNOVATE-X"}/>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-[50px]">
+              <p className="text-white text-[48px] font-medium"><span className="text-1">BIT</span> Gallery </p>
+              <Gallery/>
+              </div>
         </div>
       </div>
     </div>
