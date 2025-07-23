@@ -7,7 +7,7 @@ import Aboutus from '../../pages/aboutus/Aboutus'
 import Team from '../../pages/teampage/Team'
 import Activity from '../../pages/activitypage/Activitypage'
 import Contact from '../../pages/contact/Contact'
-import Events from '../../pages/events/Events'
+import Eventspage from '../../pages/events/Eventspage'
 export const AppRouter = () => {
   const [index,setIndex]=useState(0);
   return (
@@ -19,7 +19,7 @@ export const AppRouter = () => {
             <Route path={routes.team} element={<Team/>}/>
             <Route path={routes.activity} element={<Activity/>}/>
             <Route path={routes.contact} element={<Contact/>}/>
-            <Route path={routes.events} element={<Events/>}/>
+            <Route path={routes.events} element={<Eventspage/>}/>
 
         </Routes>
     </BrowserRouter>

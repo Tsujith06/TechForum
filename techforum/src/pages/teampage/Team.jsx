@@ -5,7 +5,7 @@ import TeamCard from "../../components/teamCard/TeamCard";
 import student from "../../assets/student.png";
 const Team = () => {
   const students = [
-    { id: 1, img: student, name: "Akash Varma L", role: "Web Developer" },
+    { id: 1, img: student, name: "Akash Varma Lds", role: "Web Developer" , details:"saydgasjcx" },
     { id: 2, img: student, name: "Akash Varma L", role: "Web Developer" },
     { id: 3, img: student, name: "Akash Varma L", role: "Web Developer" },
     { id: 4, img: student, name: "Akash Varma L", role: "Web Developer" },
@@ -48,11 +48,11 @@ const Team = () => {
               className="flex w-[1200px]  justify-center items-center overflow-x-auto   "
               style={{ scrollbarWidth: "none" }}
             >
-              {role.map((r) => {
+              {role.map((r,i) => {
                 return (
                   <p
                     key={r.id}
-                    className="text-white  flex justify-center items-center  border-[2px] border-t-0 border-b-0 pl-[50px] pr-[50px] w-auto  border-white/50"
+                    className={`text-white cursor-pointer select-none  flex justify-center items-center  border-[2px] border-t-0 border-b-0 border-l-0 pl-[50px] pr-[50px] w-auto ${i===0&&"border-l-[2px]"}  border-white/50`}
                   >
                     {r.role}
                   </p>
@@ -64,7 +64,7 @@ const Team = () => {
           <div className="grid grid-cols-4 ">
             {students.map((s) => {
               return (
-                <TeamCard key={s.id} src={s.img} name={s.name} role={s.role} />
+                <TeamCard key={s.id} src={s.img} name={s.name} role={s.role} details={s.details} />
               );
             })}
           </div>
