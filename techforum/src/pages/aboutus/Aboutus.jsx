@@ -40,39 +40,43 @@ const Aboutus = ({ index, handleindex }) => {
         className="absolute inset-0 overflow-y-auto "
         style={{ scrollbarWidth: "none" }}
       >
-        <div className="flex flex-col gap-[18px] top-[170px] left-[90px] absolute">
-          <p className="text-white text-[48px] font-medium">
-            Who <span className="text-1">We</span> Are
-          </p>
-          <p className="w-[916px] text-white text-[16px]">
-            BIT Tech Forum is a vibrant student-led initiative at Bannari Amman
-            Institute of Technology, created to encourage innovation,
-            collaboration, and hands-on learning in the field of technology. We
-            bring together passionate students from various departments to
-            explore emerging technologies, exchange ideas, and build impactful
-            solutions beyond the traditional classroom setting. Our community
-            thrives on curiosity, creativity, and the drive to make a
-            difference.
-          </p>
-        </div>
-        <img
-          src={hand}
-          alt=""
-          className="h-[400px] w-auto absolute top-[420px]"
-        />
-        <div className="flex flex-col gap-[18px] top-[400px] right-[90px] absolute w-[820px] items-end">
-          <p className="text-white text-[48px] font-medium">
-            What <span className="text-1">We</span> Do
-          </p>
-          <p className="w-[820px] text-white text-[16px] flex text-end">
-            We host a range of activities including workshops, hackathons, tech
-            talks, coding competitions, and project showcases. Our focus areas
-            span AI, IoT, Cybersecurity, Web Development, and more offering
-            students the opportunity to learn real-world skills and apply them
-            in meaningful ways. By working on interdisciplinary projects and
-            engaging with peers and experts, our members grow into confident,
-            industry-ready innovators ready to shape the future.
-          </p>
+        <div className="absolute flex gap-5 flex-col top-[170px] h-auto w-full">
+          <div className="flex relative flex-col gap-[18px] left-[50px]">
+            <p className="text-white text-[48px] font-medium">
+              Who <span className="text-1">We</span> Are
+            </p>
+            <p className="w-[916px] text-white text-[16px]">
+              BIT Tech Forum is a vibrant student-led initiative at Bannari Amman
+              Institute of Technology, created to encourage innovation,
+              collaboration, and hands-on learning in the field of technology. We
+              bring together passionate students from various departments to
+              explore emerging technologies, exchange ideas, and build impactful
+              solutions beyond the traditional classroom setting. Our community
+              thrives on curiosity, creativity, and the drive to make a
+              difference.
+            </p>
+          </div>
+          <div className="  w-full h-auto flex">
+            <img
+              src={hand}
+              alt=""
+              className="h-[400px] w-auto "
+            />
+            <div className="flex flex-col gap-[18px] relative  right-[50px] w-full items-end">
+              <p className="text-white text-[48px] font-medium">
+                What <span className="text-1">We</span> Do
+              </p>
+              <p className="w-[820px] text-white text-[16px] flex text-end">
+                We host a range of activities including workshops, hackathons, tech
+                talks, coding competitions, and project showcases. Our focus areas
+                span AI, IoT, Cybersecurity, Web Development, and more offering
+                students the opportunity to learn real-world skills and apply them
+                in meaningful ways. By working on interdisciplinary projects and
+                engaging with peers and experts, our members grow into confident,
+                industry-ready innovators ready to shape the future.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className=" w-full pb-[30px] gap-[50px] top-[860px] absolute flex flex-col justify-center items-center ">

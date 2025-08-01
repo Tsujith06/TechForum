@@ -1,10 +1,28 @@
 import { TbBrandFigma } from "react-icons/tb";
-
+import { IoMail } from "react-icons/io5";
+import { IoCallOutline } from "react-icons/io5";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 export const Figma = () => (
   <div className="h-[40px] w-[40px] flex justify-center items-center bg-8 rounded-tr-[5px] rounded-bl-[5px] rounded-tl-[10px] rounded-br-[10px]">
     <TbBrandFigma className="text-white h-[20px] w-auto" />
   </div>
 );
+
+export  const Mail_icon = ({className,onClick}) =>(
+  <IoMail className={`text-white h-6 w-auto ${className}`} onClick={onClick}/>
+)
+export  const Linkedin_icon = ({className,onClick}) =>(
+  <FaLinkedinIn className={`text-white h-6 w-auto ${className}`} onClick={onClick}/>
+)
+export  const Twitter_icon = ({className,onClick}) =>(
+  <FaTwitter className={`text-white h-6 w-auto ${className}`} onClick={onClick}/>
+)
+export  const Instagram_icon = ({className,onClick}) =>(
+  <RiInstagramFill className={`text-white h-6 w-auto ${className}`} onClick={onClick}/>
+)
 
 export const Rewardicon = () => (
   <svg

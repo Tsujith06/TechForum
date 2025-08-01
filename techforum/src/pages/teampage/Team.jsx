@@ -3,20 +3,21 @@ import bg from "../../assets/homePage.png";
 import Header from "../../components/header/Header";
 import TeamCard from "../../components/teamCard/TeamCard";
 import student from "../../assets/student.png";
+import sample from "../../assets/sample.png";
 const Team = () => {
   const students = [
-    { id: 1, img: student, name: "Akash Varma Lds", role: "Web Developer" , details:"saydgasjcx" },
-    { id: 2, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 3, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 4, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 5, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 6, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 7, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 8, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 9, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 10, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 11, img: student, name: "Akash Varma L", role: "Web Developer" },
-    { id: 12, img: student, name: "Akash Varma L", role: "Web Developer" },
+    { id: 1, img: student, name: "Akash Varma Lds",twitter:"https://x.com/elonmusk" ,linkedin:"https://www.linkedin.com/in/sujith-t-a1893a2b8/" , instaid:"https://www.instagram.com/sujith_thirumoorthi/", mailid:"rahul.cs23@bitsathy.ac.in" , role: "Web Developer" , details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React." },
+    { id: 2, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 4, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 3, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 5, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 6, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 7, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 8, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 9, img: student, name: "Akash Varma L", role: "Web Developer" ,details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React."},
+    { id: 10, img: student, name: "Akash Varma L", role: "Web Developer",details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React." },
+    { id: 11, img: student, name: "Akash Varma L", role: "Web Developer",details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React." },
+    { id: 12, img: student, name: "Akash Varma L", role: "Web Developer",details:"I'm Akash Varma L, a passionate web developer who loves turning ideas into clean, responsive websites using HTML, CSS, and JavaScript. I enjoy solving problems with code and crafting smooth user experiences with React." },
   ];
 
   const role = [
@@ -28,7 +29,7 @@ const Team = () => {
     { id: 6, role: "Digital Marketing" },
     
   ];
-  return (
+  return (  
     <div className="h-screen w-full relative overflow-hidden ">
       <img src={bg} alt="" className="absolute inset-0 bg-cover " />
       <div className="z-10 backdrop-blur-md w-full absolute ">
@@ -64,7 +65,7 @@ const Team = () => {
           <div className="grid grid-cols-4 ">
             {students.map((s) => {
               return (
-                <TeamCard key={s.id} src={s.img} name={s.name} role={s.role} details={s.details} />
+                <TeamCard key={s.id} src={s.img} name={s.name} role={s.role} details={s.details} linkedin={s.linkedin} instaid={s.instaid} mailid={s.mailid}  twitter={s.twitter} />
               );
             })}
           </div>

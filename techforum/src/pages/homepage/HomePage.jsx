@@ -35,12 +35,12 @@ const HomePage = ({ index, handleHome }) => {
   }
 
   return (
-    <div className="font-poppins h-screen w-full overflow-hidden relative">
+    <div className="font-poppins h-screen w-screen overflow-hidden relative">
       {/* Background image */}
       <img
         src={homebg}
         alt="bgimg"
-        className="h-screen w-full absolute inset-0 object-cover"
+        className="h-screen w-screen absolute inset-0 object-cover"
       />
 
       {/* Header */}
